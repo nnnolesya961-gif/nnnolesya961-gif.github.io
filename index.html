@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f2">
+  <meta name="description" content="Олеся — UX/UI и продуктовый дизайнер. Веб- и мобильные интерфейсы, кейсы и визуальные работы.">
+  <title>Олеся — UX/UI и продуктовый дизайнер</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/settings.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="mobile-header">
+    <a class="mobile-name" href="index.html">Олеся<span class="accent-dot">.</span></a>
+    <button class="mobile-menu-toggle" type="button" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false">Меню</button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu hidden aria-label="Разделы">
+    <a href="#works">Работы</a>
+    <a href="#shots">Шоты</a>
+    <a data-contact="telegram" href="#">Telegram</a>
+    <button type="button" data-copy-email>Скопировать почту</button>
+  </nav>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Об авторе и навигация">
+      <div class="sidebar-top">
+        <a class="brand" href="index.html" aria-label="Олеся, на главную">
+          <span class="brand-mark" aria-hidden="true">О</span>
+          <span class="brand-name">Олеся<span class="accent-dot">.</span></span>
+        </a>
+        <p class="sidebar-role">UX/UI &amp; Product Designer</p>
+        <span class="availability"><span class="availability-dot"></span>Открыта к предложениям</span>
+      </div>
+      <nav class="sidebar-nav" aria-label="Навигация по портфолио">
+        <a href="#works">Работы</a>
+        <a href="#shots">Шоты</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-links">
+          <a data-contact="telegram" href="#">Telegram</a>
+          <button data-copy-email type="button">Скопировать почту</button>
+          <a data-contact="figma" href="#">Figma</a>
+        </div>
+        <p class="sidebar-year">Портфолио · <span data-year>2026</span></p>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-text">
+          <h1 id="hero-title">Привет, я Олеся<span class="accent-dot">.</span></h1>
+          <div class="intro-slot">
+            <p class="intro" data-hero-copy
+              data-full="Я UX/UI и продуктовый дизайнер. Проектирую веб- и мобильные интерфейсы, продумываю пользовательские сценарии и работаю с визуальными решениями. Сейчас развиваюсь в продуктовом дизайне, изучаю гайдлайны и экспериментирую с новыми подходами."
+              data-short="Я UX/UI и продуктовый дизайнер. Проектирую интерфейсы, изучаю новое и иногда экспериментирую.">Я UX/UI и продуктовый дизайнер. Проектирую веб- и мобильные интерфейсы, продумываю пользовательские сценарии и работаю с визуальными решениями. Сейчас развиваюсь в продуктовом дизайне, изучаю гайдлайны и экспериментирую с новыми подходами.</p>
+          </div>
+        </div>
+        <button class="orbit-button" type="button" data-hero-toggle aria-label="Я тороплюсь — сократить текст" aria-pressed="false" title="Я тороплюсь">
+          <svg class="orbit-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <defs><path id="orbit-path" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs>
+            <text><textPath href="#orbit-path">Я ТОРОПЛЮСЬ · Я ТОРОПЛЮСЬ · </textPath></text>
+          </svg>
+          <span class="orbit-center" aria-hidden="true"><span class="orbit-line"></span><span class="orbit-line"></span></span>
+        </button>
+      </section>
+
+      <section id="works" class="portfolio-section" aria-labelledby="works-title">
+        <div class="section-heading"><h2 id="works-title">Работы</h2></div>
+        <div class="work-grid">
+          <a href="projects/uzum.html" class="work-card is-large">
+            <div class="cover cover-uzum" data-image="uzum" data-alt="Uzum Bank: заказ физической банковской карты">
+              <div class="cover-fallback uzum-fallback" aria-hidden="true">
+                <div class="uzum-brand">uzum bank</div>
+                <div class="uzum-phone"><div class="phone-status">9:41</div><div class="phone-title">Мои карты</div><div class="phone-card">UZUM <span>VISA</span></div><div class="phone-detail"></div><div class="phone-detail short"></div><div class="phone-action">Заказать карту</div></div>
+                <div class="uzum-floating-card">UZUM <span>VISA</span></div>
+              </div>
+            </div>
+            <div class="work-caption"><div><h3>Uzum Bank</h3><p>Заказ физической карты · Учебная практика</p></div><span class="work-type">UX/UI · Mobile</span></div>
+          </a>
+          <a href="projects/kaspersky.html" class="work-card is-small">
+            <div class="cover cover-kaspersky" data-image="kaspersky" data-alt="Kaspersky: платформа для обмена услугами">
+              <div class="cover-fallback kas-fallback" aria-hidden="true">
+                <div class="kas-word">Обмен<br>услугами</div>
+                <div class="kas-phone"><div class="kas-phone-top">Найти услугу</div><div class="kas-search"></div><div class="kas-entry"><span></span><i></i></div><div class="kas-entry"><span></span><i></i></div><div class="kas-entry"><span></span><i></i></div></div>
+              </div>
+            </div>
+            <div class="work-caption"><div><h3>Kaspersky</h3><p>Обмен услугами · Тестовое задание</p></div><span class="work-type">UX/UI · Mobile</span></div>
+          </a>
+          <a href="projects/projection.html" class="work-card is-full">
+            <div class="cover cover-projection" data-image="projection" data-alt="Проекция: интерактивный концепт воспоминаний">
+              <div class="cover-fallback projection-fallback" aria-hidden="true">
+                <div class="projection-title">Проекция</div>
+                <div class="projection-subtitle">Путешествие в воспоминания</div>
+                <div class="projection-glow"></div><div class="projection-orb"></div><div class="projection-small-orb"></div>
+              </div>
+            </div>
+            <div class="work-caption"><div><h3>Проекция</h3><p>Интерактивный визуальный концепт</p></div><span class="work-type">Concept · UI</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section id="shots" class="portfolio-section shots-section" aria-labelledby="shots-title">
+        <div class="section-heading"><h2 id="shots-title">Шоты</h2></div>
+        <div class="shots-grid">
+          <button class="shot" type="button" data-open-shot="food" aria-label="Посмотреть Food UI крупнее"><span class="shot-cover shot-food" data-image="food" data-alt="Food UI: карточка блюда"><span class="shot-fallback food-fallback"><span class="food-plate"><span></span></span></span></span><span class="shot-name">Food UI</span><span class="shot-meta">Mobile</span></button>
+          <button class="shot" type="button" data-open-shot="fitness" aria-label="Посмотреть Fitness крупнее"><span class="shot-cover shot-fitness" data-image="fitness" data-alt="Fitness: прогресс тренировок"><span class="shot-fallback fitness-fallback"><span class="fitness-device"><span>Прогресс</span><strong>+27,5 кг</strong><span>За 12 недель</span><i></i></span></span></span><span class="shot-name">Fitness</span><span class="shot-meta">Mobile</span></button>
+          <button class="shot" type="button" data-open-shot="breathe" aria-label="Посмотреть Breathe крупнее"><span class="shot-cover shot-breathe" data-image="breathe" data-alt="Breathe: визуализация воздуха"><span class="shot-fallback breathe-fallback"><span class="breathe-word">Breathe</span><span class="breathe-sphere"></span><span class="breathe-caption">CLEAR AIR</span></span></span><span class="shot-name">Breathe</span><span class="shot-meta">UI concept</span></button>
+          <button class="shot" type="button" data-open-shot="kanban" aria-label="Посмотреть Kanban крупнее"><span class="shot-cover shot-kanban" data-image="kanban" data-alt="Kanban: управление откликами"><span class="shot-fallback kanban-fallback"><span class="kanban-window"><span class="kanban-top"></span><span class="kanban-columns"><i></i><i></i><i></i></span></span></span></span><span class="shot-name">Job Kanban</span><span class="shot-meta">Web UI</span></button>
+        </div>
+      </section>
+      <footer class="footer"><span>Олеся · UX/UI &amp; Product Design</span><span data-year>2026</span></footer>
+    </main>
+  </div>
+
+  <dialog class="shot-modal" data-shot-modal aria-label="Просмотр шота">
+    <div class="modal-head"><span data-modal-title>Шот</span><button type="button" data-close-modal aria-label="Закрыть">Закрыть</button></div>
+    <div class="modal-content" data-modal-content></div>
+  </dialog>
+</body>
+</html>
